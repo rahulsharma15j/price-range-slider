@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Price Range Slider | upCoding</title>
+  </head>
+  <body>
+    <!-- App start -->
+    <div class="container">
+      <!-- Header start -->
+      <header class="title">
+        <h2>
+          <i class="fa-solid fa-indian-rupee"></i>
+          Price Range Slider
+        </h2>
+        <p>Use Slider Or Enter Custom Min And Max Price</p>
+      </header>
+
+      <!-- Header end -->
+
+      <!-- Input start -->
+      <div class="price">
+        <div class="input-field">
+          <span>Min</span>
+          <i class="fa-solid fa-indian-rupee"></i>
+          <input
+            type="number"
+            class="min-input"
+            value="5000"
+            oninput="onChangeInput(event)"
+          />
+        </div>
+        <div class="divider"></div>
+        <div class="input-field">
+          <span>Max</span>
+          <i class="fa-solid fa-indian-rupee"></i>
+          <input
+            type="number"
+            class="max-input"
+            value="10000"
+            oninput="onChangeInput(event)"
+          />
+        </div>
+      </div>
+      <!-- Input end -->
+
+      <!-- Slider start -->
+      <div class="slider">
+        <div class="progress"></div>
+      </div>
+      <!-- Slider end -->
+
+      <!-- Range start -->
+      <div class="range">
+        <input
+          type="range"
+          class="min-range"
+          min="0"
+          max="15000"
+          value="3750"
+          step="50"
+          oninput="onChangeRange(event)"
+        />
+
+        <input
+          type="range"
+          class="max-range"
+          min="0"
+          max="15000"
+          value="11250"
+          step="50"
+          oninput="onChangeRange(event)"
+        />
+      </div>
+      <!-- Range end -->
+    </div>
+    <!-- App end -->
+    <!-- script.js -->
+    <script src="script.js"></script>
+  </body>
+</html>
